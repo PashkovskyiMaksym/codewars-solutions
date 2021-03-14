@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5635e7cb49adc7b54500001c
+
+const solve = total => {
+  let count = 0;
+  const nominal = [500, 200, 100, 50, 20, 10];
+  for (let banknote of nominal) {
+    while (total >= banknote) {
+      total -= banknote;
+      count += 1;
+    }
+  }
+  return total ? -1 : count;
+}
