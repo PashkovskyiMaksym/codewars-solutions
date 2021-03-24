@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5a651865fd56cb55760000e0/train/javascript
+
+const sum = (arr) => {
+  let s = 0;
+  for(let el of arr){
+    s+=el
+  }
+  return s
+}
+
+var arrayLeaders = numbers => numbers.filter((el,i) => el > sum(numbers.slice(i + 1)))
