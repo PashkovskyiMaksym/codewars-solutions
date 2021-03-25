@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/be-concise-iv-index-of-an-element-in-an-array
+
+const find = (arr,el)=> {
+let a = arr.indexOf(el)
+  return a >= 0 ? a : "Not found";
+}
