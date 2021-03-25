@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5a3f4eace1ce0eeda600003d/train/javascript
+
+function swapTwo(arr, a, b) {
+  let array = []
+    for (let i = 0; i < arr.length; i++) {
+      if (i === arr.indexOf(a)) array.push(b);
+      else if (i === arr.lastIndexOf(b)) array.push(a);
+      else array.push(arr[i])
+     }
+return array;
+}
