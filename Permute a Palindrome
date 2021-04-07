@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/58ae6ae22c3aaafc58000079/train/javascript
+
+function permuteAPalindrome (input) { 
+    if(input === "") return true;
+    const map = {};
+    for (let char of input) {
+      map[char] = map[char] + 1 || 1;
+    }
+    for (let key in map) {
+      if (map[key] % 2 === 0) delete map[key]
+    }
+    return Object.keys(map).length <= 1;
+}
